@@ -1,8 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+
+using Backend.Model;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<StreammingDBContext>(opt 
+    => opt.UseInMemoryDatabase("my-memory-db")
+);
 
 var app = builder.Build();
 

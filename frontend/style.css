@@ -1,0 +1,33 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    gap: 40px 0px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+hls-video {
+    min-width: 60vw;
+    width: 60vw;
+    height: auto;
+    min-height: auto;
+}
+
+.video-margin {   
+    flex: 1;
+    background-color: #902020;
+}

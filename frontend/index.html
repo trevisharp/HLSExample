@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <hls-video controls src="https://stream.mux.com/r4rOE02cc95tbe3I00302nlrHfT023Q3IedFJW029w018KxZA.m3u8"></hls-video>
+
+    <div class="main-container">
+
+        <header class="video-margin"> </header>
+
+        <div class="video-container">
+            <hls-video controls src="https://stream.mux.com/r4rOE02cc95tbe3I00302nlrHfT023Q3IedFJW029w018KxZA.m3u8"></hls-video>
+        </div>
+
+        <footer class="video-margin"></footer>
+    
+    </div>
+
     <script type="module" src="https://cdn.jsdelivr.net/npm/hls-video-element@1.1/+esm"></script>
 </body>
 </html>

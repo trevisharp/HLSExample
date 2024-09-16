@@ -6,7 +6,7 @@ using Model;
 
 [ApiController]
 [Route("content")]
-public class ContentController(StreammingDBContext ctx) : ControllerBase
+public class ContentController(StreamingDBContext ctx) : ControllerBase
 {
     [HttpGet("content/{id}")]
     public async Task<IActionResult> getContent(Guid id)

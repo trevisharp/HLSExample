@@ -8,7 +8,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<StreammingDBContext>(opt 
+builder.Services.AddDbContext<StreamingDBContext>(opt 
     => opt.UseInMemoryDatabase("my-memory-db")
 );
 

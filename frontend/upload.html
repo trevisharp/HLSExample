@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTTP Live Streaming Example</title>
+    <title>Video Upload</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="uploadscript.js"></script>
 </head>
 <body>
-
     <div class="main-container">
 
         <header class="video-margin">
@@ -16,13 +15,14 @@
         </header>
 
         <div class="video-container">
-            <hls-video controls></hls-video>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" />
+                <button type="submit">Enviar</button>
+            </form>
         </div>
 
         <footer class="video-margin"></footer>
     
     </div>
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/hls-video-element@1.1/+esm"></script>
 </body>
 </html>

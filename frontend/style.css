@@ -20,6 +20,20 @@ html, body {
     flex-direction: column;
 }
 
+a {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 60vh;
+}
+
 hls-video {
     min-width: 60vw;
     width: 60vw;

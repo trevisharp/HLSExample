@@ -11,7 +11,7 @@ async function upload(ev)
     formData.append('file', fileInput.files[0]);
 
     try {
-        const response = await fetch('/api/upload/upload', {
+        const response = await fetch('https://localhost:7056/content/upload', {
             method: 'POST',
             body: formData
         });

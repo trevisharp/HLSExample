@@ -12,6 +12,14 @@ builder.Services.AddDbContext<StreamingDBContext>(opt
     => opt.UseInMemoryDatabase("my-memory-db")
 );
 
+builder.Services.AddCors(op => op
+    .AddPolicy("main", policy => policy
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowAnyOrigin()
+    )
+);
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -23,5 +31,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapControllers();
+
+app.UseCors();
 
 app.Run();

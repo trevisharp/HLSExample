@@ -1,4 +1,4 @@
-const source = "https://stream.mux.com/r4rOE02cc95tbe3I00302nlrHfT023Q3IedFJW029w018KxZA.m3u8";
+const source = "http://localhost:5267/content/1c63e630-8865-462d-8453-a3b846c55a50";
 
 window.onload = function()
 {
